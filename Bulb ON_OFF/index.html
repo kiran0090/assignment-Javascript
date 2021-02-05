@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bulb</title>
+    <link rel="stylesheet" href="bulb_style.css" />
+    <script>
+      function func() {
+        var bulb = document.getElementById("bulb");
+        var button = document.getElementById("button");
+        if (bulb.className == "off") {
+          bulb.src = "on.jpg";
+          button.innerHTML = "off";
+          bulb.className = "on";
+        } else {
+          bulb.src = "off.jpg";
+          button.innerHTML = "on";
+          bulb.className = "off";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Bulb Experiment</h1>
+    <button id="button" onclick="func()">on</button>
+    <!-- <button id="button" onclick="func()">on</button> -->
+    <img id="bulb" class="off" src="on.jpg" alt="" />
+  </body>
+</html>
