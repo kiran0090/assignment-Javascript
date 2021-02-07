@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+  <title>jquery Animation</title>
+</head>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          var div = $("div");
+          div.animate({ left: "100px" }, "slow");
+          div.animate({ fontSize: "5em" }, "slow");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button>Start Animation</button>
+    <br /><br />
+    <div style="font-size: 2rem">HELLO</div>
+  </body>
+</html>
